@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using KidKinder.Entities;
+using KidKinder.Context;
+
 
 namespace KidKinder.Entities
 {
     public class Feature
     {
+
         public int FeatureId { get; set; }
         public string Title { get; set; }
         public string Header { get; set; }
