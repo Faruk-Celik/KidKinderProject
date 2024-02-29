@@ -3,7 +3,7 @@
     ViewBag.Title = "TeacherList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-
+ 
 
 <div class="pcoded-inner-content">
     <!-- Main-body start -->
@@ -43,7 +43,7 @@
                                         <tr>
                                             <td>@item.TeacherId</td>
                                             <td>@item.NameSurname</td>
-                                            <td>@item.Title</td>
+                                            <td>@item.Branch.BranchName</td>
                                             <td><a href="/Teacher/UpdateTeacher/@item.TeacherId" class="btn btn-success">Update</a></td>
                                             <td><a href="/Teacher/DeleteTeacher/@item.TeacherId" class="btn btn-danger">Delete</a></td>
                                         </tr>
@@ -52,7 +52,7 @@
                             </table>
                             <a href="/Teacher/CreateTeacher" class="btn btn-primary"> Add New Teacher</a>
                         </div>
-                    </div>
+                    </div>         
                 </div>
             </div>
         </div>

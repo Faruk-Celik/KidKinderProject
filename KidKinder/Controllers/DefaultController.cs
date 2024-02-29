@@ -15,9 +15,6 @@ namespace KidKinder.Controllers
         {
             return View();
         }
-    
-
-      
         public PartialViewResult PartialFeature() 
         {
             var values = context.Features.ToList();

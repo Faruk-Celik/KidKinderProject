@@ -9,22 +9,31 @@ using KidKinder.Entities;
 
 namespace KidKinder.Controllers
 {
+
+    [Authorize]
     public class TeacherController : Controller
     {
         KidKinderContext context = new KidKinderContext();
-        public ActionResult TeacherList()
+        public ActionResult TeacherList ()
         {
-            var values =context.Teachers.ToList();
+            var values = context.Teachers.ToList();
             return View(values);
         }
         [HttpGet]
-        public ActionResult CreateTeacher() 
+        public ActionResult CreateTeacher ()
         {
+            List<SelectListItem> values = (from x in context.Branches.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.BranchName,
+                                               Value = x.BranchId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             return View();
         }
         [HttpPost]
-        public ActionResult CreateTeacher(Teacher teacher) 
-        {            
+        public ActionResult CreateTeacher ( Teacher teacher )
+        {
             context.Teachers.Add(teacher);
             context.SaveChanges();
             return RedirectToAction("TeacherList");
@@ -39,6 +48,13 @@ namespace KidKinder.Controllers
         [HttpGet]
         public ActionResult UpdateTeacher ( int id )
         {
+            List<SelectListItem> values = (from x in context.Branches.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.BranchName,
+                                               Value = x.BranchId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             var value = context.Teachers.Find(id);
             return View(value);
         }
@@ -47,12 +63,12 @@ namespace KidKinder.Controllers
         {
             var value = context.Teachers.Find(teacher.TeacherId);
             value.NameSurname = teacher.NameSurname;
-            value.Title = teacher.Title;
+            value.BranchId = teacher.BranchId;
             value.ImageUrl = teacher.ImageUrl;
             context.SaveChanges();
             return RedirectToAction("TeacherList");
-
         }
+
 
 
     }
