@@ -155,6 +155,7 @@
     <Compile Include="Entities\Gallery.cs" />
     <Compile Include="Entities\MailSubscribe.cs" />
     <Compile Include="Entities\Notification.cs" />
+    <Compile Include="Entities\Parent.cs" />
     <Compile Include="Entities\Service.cs" />
     <Compile Include="Entities\SocialMedia.cs" />
     <Compile Include="Entities\Teacher.cs" />
@@ -181,6 +182,10 @@
     <Compile Include="Migrations\202402221113285_mig6.cs" />
     <Compile Include="Migrations\202402221113285_mig6.designer.cs">
       <DependentUpon>202402221113285_mig6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402291314562_mig7.cs" />
+    <Compile Include="Migrations\202402291314562_mig7.designer.cs">
+      <DependentUpon>202402291314562_mig7.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SendMessageViewModel.cs" />
@@ -911,6 +916,8 @@
     <Content Include="Templates\login-form-17\scss\bootstrap\_utilities.scss" />
     <Content Include="Templates\login-form-17\scss\bootstrap\_variables.scss" />
     <Content Include="Templates\login-form-17\scss\style.scss" />
+    <Content Include="Views\Parent\UpdateParent.cshtml" />
+    <Content Include="Views\Parent\CreateParent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -958,6 +965,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202402221113285_mig6.resx">
       <DependentUpon>202402221113285_mig6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402291314562_mig7.resx">
+      <DependentUpon>202402291314562_mig7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

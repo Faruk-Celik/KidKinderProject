@@ -1,29 +1,70 @@
-﻿
+﻿@model List<KidKinder.Entities.Parent>
+
 @{
     ViewBag.Title = "ParentList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Parent List</h2>
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Update</th>
-        <th>Delete</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.TestimonialId</td>
-            <td>@item.NameSurname</td>
-            <td>@item.Title</td>
-            <td><a href="#" class="btn btn-success">Update</a></td>
-            <td><a href="#" class="btn btn-danger">Delete</a></td>
-        </tr>
-    }
-</table>
+
+<div class="pcoded-inner-content">
+    <!-- Main-body start -->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <!-- Page-body start -->
+            <div class="page-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Parent List Table</h5>
+                        <span>Parent Table used for Parent Operations  </span>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                <li><i class="fa fa-trash close-card"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Surname</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Adress</th>
+                                        <th>Update</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.ParentId</td>
+                                            <td>@item.Name</td>
+                                            <td>@item.Surname</td>
+                                            <td>@item.Email</td>
+                                            <td>@item.Phone</td>
+                                            <td>@item.Adress</td>
+                                            <td><a href="/Parent/UpdateParent/@item.ParentId" class="btn btn-success">Update</a></td>
+                                            <td><a href="/Parent/DeleteParent/@item.ParentId" class="btn btn-danger">Delete</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a href="/Parent/CreateParent" class="btn btn-primary"> Add New Teacher</a>
+                        </div>
+                    </div>
+           
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
- 

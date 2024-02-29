@@ -8,6 +8,7 @@ using KidKinder.Context;
 
 namespace KidKinder.Controllers
 {
+    //[AllowAnonymous]
     public class DefaultController : Controller
     {
         KidKinderContext context = new KidKinderContext();
@@ -42,6 +43,8 @@ namespace KidKinder.Controllers
         }
         public PartialViewResult PartialBookASeat()
         {
+            //ViewBag.ClassName = context.ClassRooms.Where(x => x.BranchId == context.Branches.Where(y => y.BranchName == "Art").Select(z => z.BranchId).FirstOrDefault()).Count();
+
             var values = context.BookASeats.ToList();
             return PartialView(values);
         }

@@ -1,9 +1,12 @@
-﻿@model KidKinder.Entities.Teacher
+﻿@model KidKinder.Entities.Parent
 @{
-    ViewBag.Title = "UpdateTeacher";
+    ViewBag.Title = "CreateParent";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
+
+<!-- Page-header start -->
+<!-- Page-header end -->
 <div class="pcoded-inner-content">
     <div class="main-body">
         <div class="page-wrapper">
@@ -12,37 +15,43 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5>Add Teacher</h5>
-                                <span>Enter data about the Teacher<span>
+                                <h5>Add Parent</h5>
+                                <span>Enter data about the Parent<span>
                             </div>
                             <div class="card-block">
-
                                 <form method="post">
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">#</label>
+                                        <label class="col-sm-2 col-form-label">Parent Name</label>
                                         <div class="col-sm-10">
-                                            @Html.TextBoxFor(x => x.TeacherId, new { @class = "form-control" })
+                                            <input type="text" name="Name" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Teacher Name Surname</label>
+                                        <label class="col-sm-2 col-form-label">Parent Surname</label>
                                         <div class="col-sm-10">
-                                            @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+                                            <input type="text" name="Surname" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Teacher Branch</label>
+                                        <label class="col-sm-2 col-form-label">Email</label>
                                         <div class="col-sm-10">
-                                            @Html.DropDownListFor(x => x.BranchId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+                                            <input type="text" name="Email" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Teacher Image</label>
+                                        <label class="col-sm-2 col-form-label">Parent Phone</label>
                                         <div class="col-sm-10">
-                                            @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                                            <input type="text" name="Phone" class="form-control">
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary">Save Teacher</button>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Parent Adress</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="Adress" class="form-control">
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="btn btn-primary">Save Parent</button>
                                 </form>
                             </div>
                         </div>
