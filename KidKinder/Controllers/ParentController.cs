@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.UI.WebControls.WebParts;
 using KidKinder.Context;
 using KidKinder.Entities;
+using Newtonsoft.Json.Linq;
 
 namespace KidKinder.Controllers
 {
@@ -48,7 +49,8 @@ namespace KidKinder.Controllers
         public ActionResult UpdateParent ( int id )
         {
             var value = context.Parents.Find(id);
-            return View(value);
+            
+            return View( value);
         }
         [HttpPost]
         public ActionResult UpdateParent ( Parent parent )

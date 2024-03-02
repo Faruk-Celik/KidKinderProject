@@ -18,20 +18,24 @@
                 <div class="col-lg-7 mb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        @*<form name="sentMessage" id="contactForm"  novalidate="novalidate">*@
+                        @using (Html.BeginForm("CreateContact", "Contact", FormMethod.Post))
+                        {
                             <div class="control-group">
                                 <input type="text"
                                        class="form-control"
                                        id="name"
-                                       placeholder="Your Name"
+                                       name="NameSurname"
+                                       placeholder="Your Name and Surname"
                                        required="required"
-                                       data-validation-required-message="Please enter your name" />
+                                       data-validation-required-message="Please enter your Name and Surname" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input type="email"
                                        class="form-control"
                                        id="email"
+                                       name="Email"
                                        placeholder="Your Email"
                                        required="required"
                                        data-validation-required-message="Please enter your email" />
@@ -41,6 +45,7 @@
                                 <input type="text"
                                        class="form-control"
                                        id="subject"
+                                       name="Subject"
                                        placeholder="Subject"
                                        required="required"
                                        data-validation-required-message="Please enter a subject" />
@@ -50,6 +55,7 @@
                                 <textarea class="form-control"
                                           rows="6"
                                           id="message"
+                                          name="Message"
                                           placeholder="Message"
                                           required="required"
                                           data-validation-required-message="Please enter your message"></textarea>
@@ -62,10 +68,12 @@
                                     Send Message
                                 </button>
                             </div>
-                        </form>
+                        }
+                        @*</form>*@
                     </div>
                 </div>
                 @Html.Action("ContactAddressPartial", "Contact")
+                @Html.Action("ContactMaps", "Contact")
 
             </div>
         </div>

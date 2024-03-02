@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\KidKinderContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AdminClassesController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\ClassesController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -137,9 +138,11 @@
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IncommingMessagesController.cs" />
     <Compile Include="Controllers\KidKinderLayoutController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ParentController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Controllers\TeachersController.cs" />
     <Compile Include="Entities\About.cs" />
@@ -918,6 +921,10 @@
     <Content Include="Templates\login-form-17\scss\style.scss" />
     <Content Include="Views\Parent\UpdateParent.cshtml" />
     <Content Include="Views\Parent\CreateParent.cshtml" />
+    <Content Include="Views\Contact\ContactMaps.cshtml" />
+    <Content Include="Views\IncommingMessages\Index.cshtml" />
+    <Content Include="Views\AdminClasses\Index.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

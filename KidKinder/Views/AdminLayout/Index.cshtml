@@ -6,12 +6,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@Html.Action("PartialHead","AdminLayout")
+@Html.Action("PartialHead", "AdminLayout")
+
 
 <body>
     <div id="pcoded" class="pcoded">
         <div class="pcoded-overlay-box"></div>
         <div class="pcoded-container navbar-wrapper">
+
             @Html.Action("PartialNavbar", "AdminLayout")
 
 
@@ -21,7 +23,7 @@
 
                     <div class="pcoded-content">
 
-                        @Html.Action("PartialHeader", "AdminLayout")
+                        @*@Html.Action("PartialHeader", "AdminLayout")*@
 
 
                         @RenderBody()
