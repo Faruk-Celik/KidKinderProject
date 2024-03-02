@@ -20,21 +20,22 @@
                     <li class="breadcrumb-item">
                         <a href="/Dashboard/index"> <i class="fa fa-home"></i> </a>
                     </li>
-                   
-                   
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
+
 <div class="pcoded-inner-content">
-  
+
     <div class="main-body">
         <div class="page-wrapper">
-             
+
             <div class="page-body">
                 <div class="row">
+
+
                     <div class="col-xl-4 col-md-12">
                         <div class="card mat-stat-card">
                             <div class="card-block">
@@ -42,18 +43,18 @@
                                     <div class="col-sm-6 b-r-default p-b-20 p-t-20">
                                         <div class="row align-items-center text-center">
                                             <div class="col-4 p-r-0">
-                                                <i class="fa fa-user text-c-purple f-24"></i>
+                                                <i class="fa fa-envelope-open text-c-blue f-24"></i>
                                             </div>
                                             <div class="col-8 p-l-0">
                                                 <h5>@ViewBag.ArtLessonCount</h5>
-                                                <p class="text-muted m-b-0">Art Lesson</p>
+                                                <p class="text-muted m-b-0"> Incoming Messages</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 p-b-20 p-t-20">
                                         <div class="row align-items-center text-center">
                                             <div class="col-4 p-r-0">
-                                                <i class="fa fa-volume-down text-c-green f-24"></i>
+                                                <i class="fas fa-signal text-c-red f-24"></i>
                                             </div>
                                             <div class="col-8 p-l-0">
                                                 <h5>@ViewBag.AvgPrice</h5>
@@ -69,19 +70,19 @@
                                                 <i class="fa fa-file-alt text-c-red f-24"></i>
                                             </div>
                                             <div class="col-8 p-l-0">
-                                                <h5>2000+</h5>
-                                                <p class="text-muted m-b-0">Files</p>
+                                                <h5>@ViewBag.TotalService</h5>
+                                                <p class="text-muted m-b-0">Total Services</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 p-b-20 p-t-20">
                                         <div class="row align-items-center text-center">
                                             <div class="col-4 p-r-0">
-                                                <i class="fa fa-envelope-open text-c-blue f-24"></i>
+                                                <i class="fa fa-user text-c-purple f-24"></i>
                                             </div>
                                             <div class="col-8 p-l-0">
-                                                <h5>120</h5>
-                                                <p class="text-muted m-b-0">Mails</p>
+                                                <h5>@ViewBag.TotalTeacher</h5>
+                                                <p class="text-muted m-b-0">Our Teachers</p>
                                             </div>
                                         </div>
                                     </div>
@@ -89,9 +90,192 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-4 col-md-12">
+                        <div class="card mat-stat-card">
+                            <div class="card-block">
+                                <div class="row align-items-center b-b-default">
+                                    <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                        <div class="row align-items-center text-center">
+                                            <div class="col-4 p-r-0">
+                                                <i class="fas fa-wifi text-c-blue f-24"></i>
+                                            </div>
+                                            <div class="col-8 p-l-0">
+                                                <h5>@ViewBag.ClassRoom</h5>
+                                                <p class="text-muted m-b-0"> Total ClassRooms</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 p-b-20 p-t-20">
+                                        <div class="row align-items-center text-center">
+                                            <div class="col-4 p-r-0">
+                                                <i class="fas fa-signal text-c-red f-24"></i>
+                                            </div>
+                                            <div class="col-8 p-l-0">
+                                                <h5>@ViewBag.Branch</h5>
+                                                <p class="text-muted m-b-0">Lesson Branch Count</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
+                                        <div class="row align-items-center text-center">
+                                            <div class="col-4 p-r-0">
+                                                <i class="fas fa-share-alt text-c-purple f-24"></i>
+                                            </div>
+                                            <div class="col-8 p-l-0">
+                                                <h5>@ViewBag.Contact</h5>
+                                                <p class="text-muted m-b-0">Contacs</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 p-b-20 p-t-20">
+                                        <div class="row align-items-center text-center">
+                                            <div class="col-4 p-r-0">
+                                                <i class="fas fa-sitemap text-c-green f-24"></i>
+                                            </div>
+                                            <div class="col-8 p-l-0">
+                                                <h5>@ViewBag.Contact</h5>
+                                                <p class="text-muted m-b-0">Our Referances</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-4 col-md-12">
+                        <div class="card mat-clr-stat-card text-white green ">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-3 text-center bg-c-green">
+                                        <i class="fas fa-star mat-icon f-24"></i>
+                                    </div>
+                                    <div class="col-9 cst-cont">
+                                        <h5>@ViewBag.Admin</h5>
+                                        <p class="m-b-0">Admin Count</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mat-clr-stat-card text-white blue">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-3 text-center bg-c-blue">
+                                        <i class="fas fa-trophy mat-icon f-24"></i>
+                                    </div>
+                                    <div class="col-9 cst-cont">
+                                        <h5>17</h5>
+                                        <p class="m-b-0">Achievements</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+<div class="pcoded-inner-content">
+    <!-- Main-body start -->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <!-- Page-body start -->
+            <div class="page-body">
+                <div class="row">
+
+                    <div class="col-xl-6 col-md-12">
+                        <div class="card table-card">
+                            <div class="card-header">
+                                <h5>Teachers</h5>
+                                <div class="card-header-right">
+                                    <ul class="list-unstyled card-option">
+
+                                        <li><i class="bi bi-mortarboard"></i></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <div class="table-responsive">
+                                    <table class="table table-hover m-b-0 without-header">
+
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-inline-block align-middle">
+                                                            <img src="@item.ImageUrl" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                            <div class="d-inline-block">
+                                                                <h6></h6>
+                                                                <p class="text-muted m-b-0">@item.NameSurname</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12">
+                        <div class="row">
+                            <!-- sale card start -->
+                            <div class="col-md-6">
+                                <div class="card text-center order-visitor-card">
+                                    <div class="card-block">
+                                        <h4 class="m-t-15 m-b-15"><img src="https://freepngimg.com/thumb/instagram/118541-logo-instagram-png-download-free.png" width="100" height="100" />Instagram</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card text-center order-visitor-card">
+                                    <div class="card-block">
+                                        <h4 class="m-t-15 m-b-15"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" width="100" height="100" style="margin-right:10px" />Twitter</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card text-center order-visitor-card">
+                                    <div class="card-block">
+                                        <h4 class="m-t-15 m-b-15"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" width="100" height="100" style="margin-right:10px" />LinkedIn</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card text-center order-visitor-card">
+                                    <div class="card-block">
+
+                                        <h4 class="m-t-15 m-b-15"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="100" height="100" style="margin-right:10px" />Github</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sale card end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 

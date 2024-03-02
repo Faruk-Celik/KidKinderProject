@@ -18,7 +18,23 @@ namespace KidKinder.Controllers
             ViewBag.ArtLessonCount = context.Teachers.Where(x => x.BranchId == context.Branches.Where(y => y.BranchName == "Art").Select(z => z.BranchId).FirstOrDefault()).Count();
 
             ViewBag.AvgPrice =context.ClassRooms.Average(x => x.Price).ToString("0.00");
-            return View();
+
+            ViewBag.TotalService = context.Services.Count();
+
+            ViewBag.TotalTeacher = context.Teachers.Count();
+
+            ViewBag.ClassRoom = context.ClassRooms.Count();
+
+            ViewBag.Branch = context.Branches.Count();
+
+            ViewBag.Contact = context.Contacts.Count();
+            ViewBag.Admin = context.Admins.Count();
+
+            ViewBag.Testimonial = context.Testimonials.Count();
+
+            var value = context.Teachers.ToList();
+            return View(value);
+            
         }
     }
 }

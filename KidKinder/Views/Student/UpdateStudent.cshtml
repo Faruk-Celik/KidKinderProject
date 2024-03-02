@@ -1,0 +1,67 @@
+﻿@model KidKinder.Entities.Student
+@{
+    ViewBag.Title = "UpdateStudent";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="pcoded-inner-content">
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Add Student</h5>
+                            </div>
+                            <div class="card-block">
+                                <form method="post">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">#</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.StudentId, new { @class = "form-control", @readonly = "readonly" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Student Name </label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Surname</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Age</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Age, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Class</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.StudentClass, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                  
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Save Student</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
