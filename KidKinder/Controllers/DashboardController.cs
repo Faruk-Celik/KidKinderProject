@@ -28,7 +28,10 @@ namespace KidKinder.Controllers
             ViewBag.Branch = context.Branches.Count();
 
             ViewBag.Contact = context.Contacts.Count();
+
             ViewBag.Admin = context.Admins.Count();
+
+            ViewBag.MailSubscribers = context.MailSubscribes.Count();
 
             ViewBag.Testimonial = context.Testimonials.Count();
 
