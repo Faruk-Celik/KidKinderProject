@@ -48,9 +48,9 @@
 
 ![Ekran görüntüsü 2024-03-03 173940](https://github.com/Faruk-Celik/KidKinderProject/assets/72822335/7194b454-1fa6-47e9-9458-929a2d48b416)
 
-![Ekran görüntüsü 2024-03-03 172832](https://github.com/Faruk-Celik/KidKinderProject/assets/72822335/3c8660b9-7d8a-4f7f-a6e1-b248c30c6259)
-
 ![Ekran görüntüsü 2024-03-03 174048](https://github.com/Faruk-Celik/KidKinderProject/assets/72822335/e77e0f07-a2cb-47d7-bc92-d389302d6bac)
+
+![Ekran görüntüsü 2024-03-03 172832](https://github.com/Faruk-Celik/KidKinderProject/assets/72822335/3c8660b9-7d8a-4f7f-a6e1-b248c30c6259)
 
 ![Ekran görüntüsü 2024-03-03 172943](https://github.com/Faruk-Celik/KidKinderProject/assets/72822335/1e409a3c-b825-417a-a2be-a7733d6a0926)
 
