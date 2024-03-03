@@ -56,6 +56,7 @@
 
 ![Ekran görüntüsü 2024-03-03 173841](https://github.com/Faruk-Celik/KidKinderProject/assets/72822335/13b0cf50-6ef5-447d-9301-6a3f6c88eadd)
 
+![Ekran görüntüsü 2024-03-03 175946](https://github.com/Faruk-Celik/KidKinderProject/assets/72822335/3e7e3f08-5bb7-4de6-bbd0-1151934ea62c)
 
 
 
